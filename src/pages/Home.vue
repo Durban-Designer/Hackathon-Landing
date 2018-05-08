@@ -40,20 +40,19 @@
       <li>But wait, there’s more! Hackathon winners will receive a 5k Scholarship to Woz U (that is transferable) and each participant will also receive a $1500 scholarship.</li>
     </ul>
     <h2 v-on:click="$push('/register')" class="linkRegister">Register Today!</h2>
-    <p>
+    <p class="email">
       As much as we would love to host all of the Phoenix Valley, our space can
       only support a limited number of participants. <span v-on:click="$push('/register')" class="linkRegisterInline">Register today</span> to reserve
-      your spot and please email me at <span class="email" href="mailto:royce.birnbaum@gmail.com">royce.birnbaum@gmail.com</span>
+      your spot and please email me at <a class="email" href="mailto:royce.birnbaum@gmail.com">royce.birnbaum@gmail.com</a>
       if you have any questions!
     </p>
-    <h2>Logistics</h2>
-    <p>
+    <h2>Information</h2>
       <h4>Date:</h4>Saturday, June 2nd, 2018<br/>
       <h4>Time:</h4>8AM-10PM<br/>
       <h4>Location: Screen Art Studios Headquarters;</h4>
       <h4>318 N 15th St. Phoenix, AZ 85006<br/>
   </h4>
-    <h4>Schedule;<br/>Saturday</h4>
+    <h4>Schedule; Saturday</h4>
     <p>
       8:00 AM - Check In / Breakfast social<br/>
       9:00 AM - Hackathon Brief<br/>
@@ -64,7 +63,7 @@
       9:00 PM - Hackathon Ends<br/>
       9:30 PM - Winners Announced<br/>
     </p>
-    <h4 href="https://woz-u.com/">Sponsored By Woz U</h4>
+    <h4 class="woz" href="https://woz-u.com/">Sponsored By Woz U</h4>
     <img/>
     <!-- Put woz u logo here when avery gets back with nice one-->
   </div>
@@ -78,5 +77,54 @@ export default {
 
 <style scoped lang="less">
   .main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+  }
+  h2 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 1.5em;
+    color: red;
+  }
+  h3 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+  }
+  h4 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  p {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+  ul {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+  li {
+    line-height: 20px;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .email {
+    margin-top: 50px;
+  }
+  .woz {
+    margin-top: 60px;
   }
 </style>
