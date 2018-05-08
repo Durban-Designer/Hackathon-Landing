@@ -1,10 +1,12 @@
 <template>
   <div class="main">
+    <div class="logoBackground"></div>
+    <a href="https://www.screenartstudios.com"><div class="logoBanner"></div></a>
     <h1>
       Hosted by Woz U Alumni, Screen Art Studios NEEDS your help in developing
       the next greatest Plugin for the Mystic Marketplace.
     </h1>
-    <h2>What is a Hackathon?/What is this Hackathon about?</h2>
+    <h2>What is this Hackathon about?</h2>
     <p>
       In the context of a hackathon, the word "hack" is used to describe how
       multiple technologies can be used together in a new and innovative way.
@@ -40,19 +42,17 @@
       <li>But wait, there’s more! Hackathon winners will receive a 5k Scholarship to Woz U (that is transferable) and each participant will also receive a $1500 scholarship.</li>
     </ul>
     <h2 v-on:click="$router.push('/register')" class="linkRegister">Register Today!</h2>
-    <p>
+    <p class="email">
       As much as we would love to host all of the Phoenix Valley, our space can
-      only support a limited number of participants. <span v-on:click="$push('/register')" class="linkRegisterInline">Register today</span> to reserve
-      your spot and please email me at <span class="email" href="mailto:royce.birnbaum@gmail.com">royce.birnbaum@gmail.com</span>
+      only support a limited number of participants. <span v-on:click="$router.push('/register')" class="linkRegisterInline">Register today</span> to reserve
+      your spot and please email me at <a class="email" href="mailto:royce.birnbaum@gmail.com">royce.birnbaum@gmail.com</a>
       if you have any questions!
     </p>
-    <h2>Logistics</h2>
-    <div>
-      <h4>Date:</h4>Saturday, June 2nd, 2018<br/>
-      <h4>Time:</h4>8AM-10PM<br/>
-      <h4>Location: Screen Art Studios Headquarters;</h4>318 N 15th St. Phoenix, AZ 85006<br/>
-    </div>
-    <h4>Schedule;<br/>Saturday</h4>
+    <h2 class="info">Information</h2>
+    <h4>Date:</h4>Saturday, June 2nd, 2018<br/>
+    <h4>Time:</h4>8AM-10PM<br/>
+    <h4>Location:</h4>318 N 15th St. Phoenix, AZ 85006<br/>
+    <h4>Schedule;</h4>
     <p>
       8:00 AM - Check In / Breakfast social<br/>
       9:00 AM - Hackathon Brief<br/>
@@ -63,7 +63,7 @@
       9:00 PM - Hackathon Ends<br/>
       9:30 PM - Winners Announced<br/>
     </p>
-    <h4 href="https://woz-u.com/">Sponsored By Woz U</h4>
+    <h4><a class="woz" href="https://woz-u.com/">Sponsored By Woz U</a></h4>
     <img/>
     <!-- Put woz u logo here when avery gets back with nice one-->
   </div>
@@ -77,5 +77,85 @@ export default {
 
 <style scoped lang="less">
   .main {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 200px;
+  }
+  .logoBanner {
+    z-index: 3;
+    background-image: url('../assets/logo.svg');
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50px;
+    left: 18%;
+  }
+  .logoBackground {
+    z-index: -2;
+    background-color: #333;
+    opacity: .8;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  h1 {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+  }
+  h2 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 1.5em;
+    color: red;
+  }
+  h3 {
+    grid-column-start: 2;
+    grid-column-end: 8;
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+  }
+  h4 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  p {
+    grid-column-start: 2;
+    grid-column-end: 8;
+  }
+  ul {
+    grid-column-start: 3;
+    grid-column-end: 7;
+  }
+  li {
+    line-height: 20px;
+  }
+  .linkRegister {
+    text-align: center;
+    text-decoration: underline;
+  }
+  .linkRegisterInline {
+    text-decoration: underline;
+  }
+  .info {
+    text-align: center;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .email {
+    margin-top: 50px;
+  }
+  .woz {
+    margin-top: 60px;
   }
 </style>
