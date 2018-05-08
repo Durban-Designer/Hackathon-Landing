@@ -1,7 +1,8 @@
 <template>
   <div class="main">
-    <div class="logoBackground"></div>
-    <a href="https://www.screenartstudios.com"><div class="logoBanner"></div></a>
+    <div class="logoBackground">
+    <div class="logoBanner"><a href="https://www.screenartstudios.com"></a></div>
+    </div>
     <h1>
       Hosted by Woz U Alumni, Screen Art Studios NEEDS your help in developing
       the next greatest Plugin for the Mystic Marketplace.
@@ -85,21 +86,24 @@ export default {
     z-index: 3;
     background-image: url('../assets/logo.svg');
     background-repeat: no-repeat;
-    width: 500px;
-    height: 300px;
+    background-position: center;
+    background-size: contain;
+    width: 250px;
+    height: 200px;
     position: absolute;
-    top: 50px;
-    left: 18%;
+    top: 0px;
+    grid-column: 2;
   }
   .logoBackground {
     z-index: -2;
     background-color: #333;
-    opacity: .8;
     width: 100%;
     height: 200px;
     position: absolute;
     top: 0;
     left: 0;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
   }
   h1 {
     grid-row: 1;

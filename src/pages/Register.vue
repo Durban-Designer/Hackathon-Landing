@@ -4,7 +4,8 @@
       <h2>Success</h2>
       <button v-on:click="$router.push('/')">Go Back</button>
     </div>
-    <div v-else>
+    <div class="regbox" v-else>
+      <h1>Register</h1>
       <input v-model="name" placeholder="user st john"/>
       <input v-model="phone" placeholder="**********" />
       <input v-model="email" placeholder="user@gmail.com" />
@@ -53,6 +54,24 @@ export default {
 </script>
 
 <style scoped lang="less">
-  .main {
+  .regbox{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 60px);
+  }
+  h1 {
+    grid-row: 1;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    font-size: 2em;
+    text-align: center;
+  }
+  input {
+    grid-column-start: 2;
+    grid-column-end: 10;
+  }
+  button {
+    grid-column-start: 2;
+    grid-column-end: 10;
   }
 </style>
