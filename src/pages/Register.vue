@@ -2,7 +2,7 @@
   <div class="main">
     <div v-if="modal==='success'">
       <h2>Success</h2>
-      <button v-on:click="$router.push('/')">Go Back</button>
+      <button class="back" v-on:click="$router.push('/')">Go Back</button>
     </div>
     <div class="regbox" v-else>
       <h1>Register</h1>
@@ -65,6 +65,16 @@ export default {
     grid-column-end: 10;
     font-size: 2em;
     text-align: center;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 30%;
+  }
+  .back {
+    text-align: center;
+    margin-left: 33%;
+    width: 33%;
+    margin-top: 10%;
   }
   input {
     grid-column-start: 2;

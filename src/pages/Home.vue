@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div class="logoBackground">
-    <div class="logoBanner"><a href="https://www.screenartstudios.com"></a></div>
+      <div class="logoBanner"><a href="https://www.screenartstudios.com"></a></div>
     </div>
     <h1>
       Hosted by Woz U Alumni, Screen Art Studios NEEDS your help in developing
@@ -90,7 +90,6 @@ export default {
     background-size: contain;
     width: 250px;
     height: 200px;
-    position: absolute;
     top: 0px;
     grid-column: 2;
   }
