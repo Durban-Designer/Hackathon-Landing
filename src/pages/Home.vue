@@ -47,11 +47,11 @@
       if you have any questions!
     </p>
     <h2>Logistics</h2>
-    <p>
+    <div>
       <h4>Date:</h4>Saturday, June 2nd, 2018<br/>
       <h4>Time:</h4>8AM-10PM<br/>
       <h4>Location: Screen Art Studios Headquarters;</h4>318 N 15th St. Phoenix, AZ 85006<br/>
-    </p>
+    </div>
     <h4>Schedule;<br/>Saturday</h4>
     <p>
       8:00 AM - Check In / Breakfast social<br/>
