@@ -39,7 +39,7 @@
       <li>Hiring opportunities! Screen Art Studios is always on the lookout for rising talent to recruit for their in-house development teams.</li>
       <li>But wait, there’s more! Hackathon winners will receive a 5k Scholarship to Woz U (that is transferable) and each participant will also receive a $1500 scholarship.</li>
     </ul>
-    <h2 v-on:click="$push('/register')" class="linkRegister">Register Today!</h2>
+    <h2 v-on:click="$router.push('/register')" class="linkRegister">Register Today!</h2>
     <p>
       As much as we would love to host all of the Phoenix Valley, our space can
       only support a limited number of participants. <span v-on:click="$push('/register')" class="linkRegisterInline">Register today</span> to reserve
