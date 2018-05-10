@@ -6,9 +6,13 @@
     </div>
     <div class="regbox" v-else>
       <h1>Register</h1>
+      <h3>Name:</h3>
       <input v-model="name" placeholder="user st john"/>
-      <input v-model="phone" placeholder="**********" />
+      <h3>Phone Number:</h3>
+      <input v-model="phone" placeholder="1231231122" />
+      <h3>Email:</h3>
       <input v-model="email" placeholder="user@gmail.com" />
+      <h3>Address:</h3>
       <input v-model="address" placeholder="1111 w user st" />
       <button v-on:click="registerProspect">Register</button>
       <button v-on:click="$router.push('/')">Go Back</button>
@@ -55,9 +59,10 @@ export default {
 
 <style scoped lang="less">
   .regbox{
+    margin-top: 140px;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 60px);
+    grid-template-rows: repeat(12, 60px);
   }
   h1 {
     grid-row: 1;
@@ -70,6 +75,11 @@ export default {
     text-align: center;
     margin-top: 30%;
   }
+  h3 {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 11;
+  }
   .back {
     text-align: center;
     margin-left: 33%;
@@ -77,11 +87,28 @@ export default {
     margin-top: 10%;
   }
   input {
+    margin-top: 20px;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    border: 1px black solid;
+  }
+  button {
+    margin-top: 20px;
     grid-column-start: 2;
     grid-column-end: 10;
   }
-  button {
-    grid-column-start: 2;
-    grid-column-end: 10;
+  @media only screen and (min-width:750px) {
+    .regbox{
+      margin-top: 140px;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-template-rows: repeat(12, 100px);
+    }
+    input {
+      margin-top: 40px;
+      grid-column-start: 2;
+      grid-column-end: 10;
+      border: 1px black solid;
+    }
   }
 </style>

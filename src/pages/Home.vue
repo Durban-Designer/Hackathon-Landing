@@ -1,11 +1,8 @@
 <template>
   <div class="main">
-    <div class="logoBackground">
-      <div class="logoBanner"><a href="https://www.screenartstudios.com"></a></div>
-    </div>
     <h1>
-      Hosted by Woz U Alumni, Screen Art Studios NEEDS your help in developing
-      the next greatest Plugin for the Mystic Marketplace.
+      Hosted by Woz U Alumni Screen Art Studios, we NEED your help in developing
+      the next greatest Plugin for the Mystic Marketplace!
     </h1>
     <h2>What is this Hackathon about?</h2>
     <p>
@@ -13,14 +10,18 @@
       multiple technologies can be used together in a new and innovative way.
       Participants will work in teams to balance out skill levels and will be
       tasked with planning, pitching, and once given approval developing their own
-      Plugin to place on the Mystic Marketplace.
+      Plugin to place on the Mystic Marketplace. <span class="bold">Hackathon winners
+      will receive a 5k Scholarship to Woz U (that is transferable) and each participant
+      will also receive a $1500 scholarship.</span>
     </p>
     <h2>What is Mystic CRM and the Mystic Marketplace?</h2>
     <p>
       Mystic CRM is Screen Art Studios take on a CRM “customer relationship management”,
       this software will be used by companies to manage customer interactions and sales. It
       handles lead tracking, marketing campaigns, analytics, and much more.
-      <span class="bold">Screen Art Studios is finalizing production of Mystic CRM but we need your help!</span>
+    </p>
+    <span class="bold">Screen Art Studios is finalizing production of Mystic CRM but we need your help!</span>
+    <p style="margin-top: 20px;">
       Mystic CRM is being developed for small to mid sized businesses with an
       emphasis on simplicity and user experience. Within the Mystic app,
       clients have access to the Mystic Marketplace where the user can purchase
@@ -38,9 +39,10 @@
         The chance to place your plugin in the Mystic Marketplace. Your work will
         be in an actual application that is on the market, take that to your next job interview!
       </li>
-      <li>You will utilize your GitHub to push commits to the repositories so employers can see your contribution in detail. </li>
+      <li>Free Food, energy drinks, and beer!</li>
+      <li>You will utilize your GitHub to push commits to the repositories so future employers can see your contribution in detail. </li>
       <li>Hiring opportunities! Screen Art Studios is always on the lookout for rising talent to recruit for their in-house development teams.</li>
-      <li>But wait, there’s more! Hackathon winners will receive a 5k Scholarship to Woz U (that is transferable) and each participant will also receive a $1500 scholarship.</li>
+      <li>But wait, there’s more! <span class="bold">Hackathon winners will receive a 5k Scholarship to Woz U (that is transferable) and each participant will also receive a $1500 scholarship.</span></li>
     </ul>
     <h2 v-on:click="$router.push('/register')" class="linkRegister">Register Today!</h2>
     <p class="email">
@@ -53,7 +55,7 @@
     <h4>Date:</h4>Saturday, June 2nd, 2018<br/>
     <h4>Time:</h4>8AM-10PM<br/>
     <h4>Location:</h4>318 N 15th St. Phoenix, AZ 85006<br/>
-    <h4>Schedule;</h4>
+    <h4>Schedule:</h4>
     <p>
       8:00 AM - Check In / Breakfast social<br/>
       9:00 AM - Hackathon Brief<br/>
@@ -64,9 +66,10 @@
       9:00 PM - Hackathon Ends<br/>
       9:30 PM - Winners Announced<br/>
     </p>
-    <h4><a class="woz" href="https://woz-u.com/">Sponsored By Woz U</a></h4>
-    <img/>
-    <!-- Put woz u logo here when avery gets back with nice one-->
+    <h4 class="woz">Our Sponsors</h4>
+    <a href="https://woz-u.com/">
+      <img width="90%" style="margin-left: 5%;" src="../assets/woz-logo.png"/>
+    </a>
   </div>
 </template>
 
@@ -80,17 +83,11 @@ export default {
   .main {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 200px;
+    margin-top: 160px;
   }
   .logoBanner {
     z-index: 3;
-    background-image: url('../assets/logo.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 250px;
-    height: 200px;
-    top: 0px;
+    margin-top: 14%;
     grid-column: 2;
   }
   .logoBackground {
@@ -101,8 +98,8 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   h1 {
     grid-row: 1;
@@ -160,5 +157,7 @@ export default {
   }
   .woz {
     margin-top: 60px;
+    text-align: center;
+    text-decoration: none;
   }
 </style>
