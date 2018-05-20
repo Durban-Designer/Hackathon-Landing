@@ -28,7 +28,7 @@
       plugins for additional functionality.  For example, a user may need a
       plugin for internal messaging or survey generation. Participants in this
       hackathon will have the opportunity to create a plugin for the Mystic Marketplace;
-      hopefully your inovative ideas will produce a plugin that companies everyhwere find invaluable!
+      hopefully your inovative ideas will produce a plugin that companies everywhere find invaluable!
     </p>
     <h3>Read on for the benefits of attending our hackathon!</h3>
     <h4>Whats in it for you?</h4>
